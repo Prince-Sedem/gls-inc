@@ -48,23 +48,68 @@ function Navbar() {
   ];
 
   return (
+    <div className="fixed top-0 left-0 w-full z-50">
+        {/* 🔥 MARQUEE */}
+    <div className="bg-blue-600 text-white overflow-hidden">
+      <div className="marquee-wrapper">
+      <div className="animate-marquee flex items-center space-x-2 py-1">
+        <img
+          src="/images/gls-inc2.png"
+          alt="Global Life Saver Inc"
+          className="w-8 h-6 mb-2"
+        />
+        <span className="text-sm ">
+          Global Life Savers Inc
+        </span>
+
+        {/* duplicate for smooth looping */}
+        <img
+          src="/images/gls-inc2.png"
+          alt="Global Life Saver Inc"
+          className="w-8 h-6 mb-2"
+        />
+        <span className="text-sm">
+          Global Life Savers Inc
+        </span>
+        {/* duplicate for smooth looping */}
+        <img
+          src="/images/gls-inc2.png"
+          alt="Global Life Saver Inc"
+          className="w-8 h-6 mb-2"
+        />
+        <span className=" text-sm">
+          Global Life Savers Inc
+        </span>
+        {/* duplicate for smooth looping */}
+        <img
+          src="/images/gls-inc2.png"
+          alt="Global Life Saver Inc"
+          className="w-8 h-6 mb-2"
+        />
+        <span className="text-sm">
+          Global Life Savers Inc
+        </span>
+      </div>
+    </div>
+    </div>
+
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
+      className={` w-full transition-all duration-300
         ${
           scrolled
             ? "bg-white shadow-md backdrop-blur"
             : "bg-white/60 backdrop-blur-lg"
         }
       `}
-    >
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 h-20">
+    >  
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 h-15">
         
         {/* Logo */}
         <a href="#home">
           <img
-            src="/images/Fedostar-logo.png"
+            src="/images/gls-inc.png"
             alt="Fedostar Logo"
-            className="w-28 object-contain"
+            className="w-20 object-contain"
           />
         </a>
 
@@ -153,6 +198,7 @@ function Navbar() {
         </ul>
       </div>
     </nav>
+    </div>
   );
 }
 

@@ -1,50 +1,67 @@
+import React,{useEffect} from "react";
 import { motion } from "framer-motion";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function About() {
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        once: false,
+      });
+    }, []);
+
+
   return (
-    <section id="about" className="py-20 bg-gray-50 scroll-mt-28">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
 
-        {/* Text Content */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ amount: 0.3 }} // trigger when 30% visible, remove once:true
-          transition={{ duration: 0.8 }}
-          className="md:w-1/2 space-y-6"
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            About Our Company
-          </h2>
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
-            We specialize in providing comprehensive services across multiple industries. 
-            Our expertise includes transport services, wholesale, retail, procurement, 
-            tire branding services, and general merchant activities. We are committed to 
-            delivering quality, reliability, and excellence in every project we handle.
-          </p>
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
-            Whether you need goods transported efficiently, products procured strategically, 
-            or your brand’s tires to stand out, we provide solutions tailored to your needs.
-          </p>
-        </motion.div>
+    
 
-        {/* Image */}
+    <div className="py-16 px-6 bg-white">
+
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      
+
+        {/* Left: Text */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ amount: 0.3 }} // trigger when 30% visible
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="md:w-1/2"
         >
-          <img
-            src="/images/adrian-sulyok-sczNLg6rrhQ-unsplash.jpg"
-            alt="About"
-            className="w-full rounded-3xl shadow-xl object-cover"
-          />
+          <div data-aos="fade-up" className="mb-30"> 
+              <h4 className="bg-blue-300 w-40 px-5 font-bold text-white text-xl ">ABOUT US</h4> 
+
+              <h2 className="text-5xl font-bold text-gray-800 mb-4">Turning Bystanders Into First Responders Across West Africa</h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                <span className="font-semibold text-blue-600 text-2xl">Global Life Savers Inc</span> is a non-governmental organization (NGO) dedicated to reducing preventable
+                 deaths through emergency health training education, and capacity-building in underserved communities.</p>
+          </div>
         </motion.div>
 
+          {/* Left: Overlapping Images */}
+<motion.div
+  initial={{ opacity: 0, x: 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative w-full h-[420px]"
+>
+  {/* Main image */}
+  
+    <img data-aos="zoom-in"
+      src="/images/pexels-bobbydimas-33001996.jpg"
+      alt="About Us"
+      className="absolute bottom-0 left-0 w-[60%] h-[80%] object-cover rounded-2xl shadow-xl"
+    />
+
+    {/* Overlapping image */}
+    <img data-aos="zoom-out"
+      src="/images/pexels-lagosfoodbank-11298935.jpg"
+      alt="Team"
+      className="absolute top-0 right-0 w-[60%] h-[80%] object-cover rounded-2xl shadow-2xl border-4 border-white"
+    />
+</motion.div>
+
       </div>
-    </section>
+    </div>
   );
 }
 

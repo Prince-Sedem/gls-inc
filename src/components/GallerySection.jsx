@@ -38,6 +38,7 @@ export default function GallerySection() {
     <section id="gallery">
         <div  className="bg-gray-600 p-6 md:p-12 space-y-16">
           {/* ================= KUMASI SECTION ================= */}
+          <h1 className="bg-gray-500 w-50 text-xl md:xl font-bold justify-center" >TRAINING EVENTS</h1>
           <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-6">
               Health Screening In Kumasi, Asaman

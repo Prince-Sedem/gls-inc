@@ -20,7 +20,9 @@ function SupportCard() {
         </h2>
 
         <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 text-sm md:px-6 md:py-3 md:text-base  rounded-full font-semibold transition">
-          Support the Cause
+            <a href="mailto:info@glsinc.org" className="">
+                Support the Cause
+           </a>
         </button>
 
       </div>

@@ -102,9 +102,9 @@ function Footer() {
             </p>
             <p className="flex items-start gap-3">
               <FaEnvelope t className="text-yellow-400 mt-1" />
-              <span>
+              <a href="mailto:info@glsinc.org" className="hover:underline">
                 info@glsinc.org
-              </span>
+              </a>
             </p>
             <p className="flex items-start gap-3">
               <FaPhoneAlt t className="text-green-400 mt-1" />

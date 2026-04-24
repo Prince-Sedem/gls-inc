@@ -1,4 +1,12 @@
 function Hero() {
+
+const createMailTo = (subject, message) => {
+  return `mailto:info@glsinc.org?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(message)}`;
+};
+
+
   return (
     <section id="home"
       className="relative min-h-screen flex items-center text-white"
@@ -32,15 +40,30 @@ function Hero() {
           </p>
           <div className="flex gap-3 mt-3">
   <button className="px-4 py-2 text-white bg-red-500  text-xs font-medium hover:bg-red-600 transition">
+    <a href={createMailTo(
+    "Join The Mission",
+    "Hello GLS Team,\n\nI am interested in joining your mission.\nPlease let me know how I can get involved.\n\nThank you."
+  )}>
     Join The Mission
+    </a>
   </button>
 
   <button className="px-4 py-2 text-white bg-yellow-400  text-xs font-medium hover:bg-yellow-500 transition">
+    <a href={createMailTo(
+    "Volunteer Inquiry",
+    "Hello,\n\nI would love to volunteer with your organization.\nKindly share available opportunities.\n\nRegards."
+  )}>
     Volunteer
+    </a>
   </button>
 
   <button className="px-4 py-2 text-white bg-green-500 text-xs font-medium hover:bg-green-600 transition">
+    <a href={createMailTo(
+    "Donation",
+    "Hello GLS Team,\n\nI am interested in donating.\nPlease share with me your account details.\n\nThank you."
+  )}>
     Donate Now
+    </a>
   </button>
 </div>
         </div>

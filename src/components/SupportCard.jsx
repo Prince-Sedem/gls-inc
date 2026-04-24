@@ -20,7 +20,7 @@ function SupportCard() {
         </h2>
 
         <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 text-sm md:px-6 md:py-3 md:text-base  rounded-full font-semibold transition">
-            <a href="mailto:info@glsinc.org" className="">
+            <a href="mailto:info@glsinc.org?subject=Support%20for%20Your%20Cause&body=Hello%20GLS%20Team,%0D%0A%0D%0AI%20am%20interested%20in%20supporting%20your%20cause.%20Please%20let%20me%20know%20how%20I%20can%20get%20involved.%0D%0A%0D%0AThank%20you." className="">
                 Support the Cause
            </a>
         </button>

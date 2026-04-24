@@ -31,26 +31,34 @@ function ProgramsSection() {
         </p>
 
         {/* LIST */}
-        <ul data-aos="fade-up" className="mt-6 space-y-3">
-          {items.map((item, index) => (
-            <li key={index} className="flex items-center gap-3">
-              <span className="text-green-500 text-lg">
-                <FiCheck />
-              </span>
-              <span className="text-gray-700">{item}</span>
-            </li>
-          ))}
-        </ul>
+<ul data-aos="fade-up" className="mt-6 space-y-3">
+  {items.map((item, index) => (
+    <li
+      key={index}
+      className="flex items-center gap-3 group cursor-pointer"
+    >
+      <span className="p-2 rounded-full bg-blue-50 text-blue-500 transition-all duration-300 group-hover:bg-blue-500 group-hover:text-white group-hover:-translate-y-1 group-hover:animate-bounce">
+        <FiCheck />
+      </span>
+      <span className="text-gray-700 transition-colors duration-300 group-hover:text-black">
+        {item}
+      </span>
+    </li>
+  ))}
+</ul>
       </div>
 
       {/* IMAGE SIDE */}
-      <div data-aos="zoom-in" className="w-full h-full">
-        <img
-          src="/images/pexels-duy-tan-d-i-h-c-842966226-30902100.jpg"
-          alt="Life saving training"
-          className="w-full h-full object-cover rounded-2xl shadow-lg"
-        />
-      </div>
+     <div
+  data-aos="zoom-in"
+  className="group w-full h-100 overflow-hidden rounded-2xl"
+>
+  <img
+    src="/images/gls-cpr.png.jpeg"
+    alt="Life saving training"
+    className="w-full h-full object-cover rounded-2xl shadow-lg "
+  />
+</div>
 
     </section>
   );

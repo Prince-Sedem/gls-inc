@@ -1,44 +1,56 @@
 function Contact() {
   return (
-    <section id="contact" className="py-10 bg-blue-50">
-      <div className="max-w-3xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+    <section id="contact" className="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <div className="max-w-4xl mx-auto px-6">
 
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900">Get In Touch</h2>
+          <p className="text-gray-500 mt-3">
+            We’d love to hear from you. Send us a message and we’ll respond shortly.
+          </p>
+        </div>
+
+        {/* Card */}
         <form
-          action="https://formsubmit.co/fedostarenterprise@gmail.com"
+          action="https://formsubmit.co/info@glsinc.org"
           method="POST"
-          className="bg-white p-8 rounded-2xl shadow-lg space-y-6"
+          className="bg-white/80 backdrop-blur-lg border border-gray-100 p-10 rounded-3xl shadow-xl space-y-6"
         >
           <input type="hidden" name="_subject" value="New Contact Message" />
           <input type="hidden" name="_captcha" value="false" />
 
+          {/* Name */}
           <input
             type="text"
             name="name"
             placeholder="Your Name"
             required
-            className="w-full border p-3 rounded-lg"
+            className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-blue-400 focus:border-blue-400 outline-none transition"
           />
 
+          {/* Email */}
           <input
             type="email"
             name="email"
             placeholder="Your Email"
             required
-            className="w-full border p-3 rounded-lg"
+            className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-blue-400 focus:border-blue-400 outline-none transition"
           />
 
+          {/* Message */}
           <textarea
             name="message"
             rows="5"
             placeholder="Your Message"
             required
-            className="w-full border p-3 rounded-lg"
+            className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-blue-400 focus:border-blue-400 outline-none transition resize-none"
           />
 
+          {/* Button */}
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-800"
+            className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
           >
             Send Message
           </button>

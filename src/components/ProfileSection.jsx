@@ -38,7 +38,7 @@ function ProfileSection() {
         {/* Profile */}
         <div data-aos="fade-up" className="flex items-center gap-3 pt-4">
           <img
-            src="/images/pexels-duy-tan-d-i-h-c-842966226-30902100.jpg"
+            src="/images/dr-sel-p.png"
             alt="Dr Sel"
             className="w-10 h-10 rounded-full object-cover border-2 border-white shadow"
           />
@@ -51,24 +51,32 @@ function ProfileSection() {
       </div>
 
       {/* RIGHT COLUMN */}
-      <div data-aos="zoom-in" className="relative">
-        <img
-          src="/images/pexels-duy-tan-d-i-h-c-842966226-30902100.jpg"
-          alt="Emergency"
-          className="w-full h-full object-cover rounded-xl"
-        />
+     <div data-aos="zoom-in" className="relative group overflow-hidden rounded-xl">
+  <a
+    href="https://www.war.gov/News/News-Stories/Article/Article/1382623/face-of-defense-airman-seeks-to-build-generation-of-lifesavers/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="/images/dr-sel-p.png"
+      alt="Emergency"
+      className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-110"
+    />
 
-        {/* Overlay bottom-right */}
-        <div className="absolute bottom-4 right-4 text-right">
-          <h2 className="text-white text-5xl font-bold drop-shadow-lg px-8">
-            911
-          </h2>
-          <p className="text-white text-sm drop-shadow-md">
-            Is minutes away — You <br/> Are seconds away
-          </p>
-        </div>
-      </div>
+    {/* Dark hover overlay */}
+    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500 rounded-xl"></div>
 
+    {/* Text stays on top */}
+    <div className="absolute bottom-4 right-4 text-right">
+      <h2 className="text-white text-5xl font-bold drop-shadow-lg px-8">
+        911
+      </h2>
+      <p className="text-white text-sm drop-shadow-md">
+        Is minutes away — You <br /> Are seconds away
+      </p>
+    </div>
+  </a>
+</div>
     </div>
   );
 }

@@ -10,6 +10,7 @@ import Impact from './components/Impact'
 import ProgramsSection from './components/ProgramSection'
 import ProfileSection from './components/ProfileSection'
 import GallerySection from './components/GallerySection'
+import SupportCard from './components/SupportCard'
 import './App.css'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <GallerySection />
     <Contact />
     <Marquee />
+    <SupportCard />
     <Footer />
     </>
   )

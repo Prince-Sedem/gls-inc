@@ -19,7 +19,7 @@ function Navbar() {
       return;
     }
 
-    const sections = ["home", "services", "about", "contact"];
+    const sections = ["home", "about", "gallery", "contact"];
 
     for (let i = sections.length - 1; i >= 0; i--) {
       const section = document.getElementById(sections[i]);
@@ -42,8 +42,8 @@ function Navbar() {
 
   const links = [
     { label: "Home", href: "#home", id: "home" },
-    { label: "Services", href: "#services", id: "services" },
     { label: "About", href: "#about", id: "about" },
+    { label: "Gallery", href: "#gallery", id: "gallery" },
     { label: "Contact", href: "#contact", id: "contact" },
   ];
 
@@ -108,7 +108,7 @@ function Navbar() {
         <a href="#home">
           <img
             src="/images/gls-inc.png"
-            alt="Fedostar Logo"
+            alt="gls Logo"
             className="w-20 object-contain"
           />
         </a>

@@ -1,4 +1,5 @@
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt} from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 
 
@@ -7,32 +8,33 @@ function Footer() {
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
         
-        {/* Company Info */}
-        <div className="">
-            <div className="inline-block">
-            <img
-             src="/images/gls-inc2.png" 
-             alt="" 
-             className="w-20 h-20 object-contain"
-            />
+       <div>
+  {/* Logos Row */}
+  <div className="flex items-center gap-4">
+    <img
+      src="/images/gls-inc2.png"
+      alt="GLS Logo"
+      className="w-20 h-20 object-contain"
+    />
 
-            </div>
+    <img
+      src="/images/UN-SDG.png"
+      alt="UN SDG"
+      className="w-25 h-25 object-contain"
+    />
+  </div>
 
-            <div className="inline-block ml-6">
-            <img
-             src="/images/UN-SDG.png" 
-             alt="" 
-             className="w-40 h-40 object-contain"
-            />
-            </div>
-          <h2 className="text-2xl font-bold text-white">Global Life Savers Inc</h2>
-        </div>
+  {/* Company Name */}
+  <h2 className="text-2xl font-bold text-white mt-4">
+    Global Life Savers Inc
+  </h2>
+</div>
 
         {/* Quick Links */}
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            {["Home", "About", "Services", "Contact"].map((home) => (
+            {["Home", "About", "Gallery", "Contact"].map((home) => (
               <li key={home}>
                 <a href={`#${home.toLowerCase()}`} className="hover:text-white transition">
                   {home}
@@ -42,20 +44,50 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Services */}
-        <div>
-          <h3 className="text-xl font-semibold text-white mb-4">Our Socials</h3>
-          <ul className="space-y-2">
-            {["Transport", "Wholesale", "Retail", "Procurement", "Tire Branding", "General Merchant"].map((service) => (
-              <li key={service}>
-                <a href="#" className="hover:text-white transition">
-                  {service}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+{/* Socials */}
+<div>
+  <h3 className="text-xl font-semibold text-white mb-4">Our Socials</h3>
 
+  <ul className="space-y-3">
+    
+    <li>
+      <a
+        href="https://www.instagram.com/globallifesavers.inc/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-3 hover:text-pink-500 transition"
+      >
+        <FaInstagram className="text-lg" />
+        <span>Instagram</span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="https://www.linkedin.com/company/global-life-savers-inc"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-3 hover:text-blue-500 transition"
+      >
+        <FaLinkedin className="text-lg" />
+        <span>LinkedIn</span>
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-3 hover:text-white transition"
+      >
+        <FaXTwitter className="text-lg" />
+        <span>Twitter(X)</span>
+      </a>
+    </li>
+
+  </ul>
+</div>
         {/* Contact */}
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Contact Us</h3>
@@ -85,9 +117,12 @@ function Footer() {
 
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-800 text-center text-gray-500 py-6 mt-10">
-        &copy; {new Date().getFullYear()} Global Life Savers Inc. All rights reserved.
+      {/* Copyright */}
+      <div className="flex flex-col md:flex-row justify-between items-center text-gray-500 mt-6 border-t border-gray-700 pt-4 space-y-2 md:space-y-0 md:mx-3">
+        <p>&copy; {new Date().getFullYear()} Global Life Savers Inc. All rights reserved.</p>
+        <p>
+          <span className="font-bold">Developed by</span> <a href="mailto:princesedem@yahoo.com" className="underline hover:text-white">Prince Sedem</a>
+        </p>
       </div>
     </footer>
   );

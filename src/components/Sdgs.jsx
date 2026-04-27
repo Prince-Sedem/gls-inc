@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 
 function Sdgs() {
   return (
-    <div className=" bg-gray-50 grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
+    <div className=" bg-gray-300 grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
       
       {/* First Column (Text) */}
       <div className="flex flex-col justify-center">
@@ -12,7 +12,7 @@ function Sdgs() {
             Global Strategies for Life Preservation and Well-being
         </h1>
 
-        <h2 data-aos="fade-up" className="text-l text-gray-600 mb-4">
+        <h2 data-aos="fade-up" className="text-l text-gray-800 mb-4">
           A Multidimensional Approach to Eliminating Health Risks, Violence, and Resource Scarcity by 2030
         </h2>
 

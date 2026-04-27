@@ -9,7 +9,7 @@ function SupportCard() {
 
 
   return (
-    <div className="relative w-[400]px h-64 md:h-60 m-10 overflow-hidden shadow-lg group">
+    <div className=" relative w-[400]px h-64 md:h-60 m-10 overflow-hidden shadow-lg group">
       
       {/* Background Image */}
       <img

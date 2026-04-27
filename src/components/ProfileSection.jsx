@@ -4,14 +4,14 @@ import 'aos/dist/aos.css';
 
 function ProfileSection() {
   return  (
-    <div className="grid md:grid-cols-2 gap-10 items-center p-6 md:p-12">
+    <div className="bg-gray-300 grid md:grid-cols-2 gap-10 items-center p-6 md:p-12">
       
       {/* LEFT COLUMN */}
       <div  className="space-y-6">
         
         {/* Header */}
         <div>
-            <h4 data-aos="fade-up" className="bg-blue-300 w-87 px-5 font-bold text-white text-l uppercase tracking-wider">
+            <h4 data-aos="fade-up" className="bg-blue-700 w-87 px-5 font-bold text-white text-l uppercase tracking-wider">
                 LET'S BUILD TOMORROW TOGETHER
             </h4>
           <h1 data-aos="fade-up" className="text-3xl md:text-3xl font-bold mb-3">
@@ -19,16 +19,16 @@ function ProfileSection() {
           </h1>
 
           {/* Quote */}
-          <div data-aos="fade-up" className="flex items-center gap-3 bg-gray-100 p-3 rounded-lg w-fit">
+          <div data-aos="fade-up" className="flex items-center gap-3 bg-gray-400 p-3 rounded-lg w-fit">
             <FaQuoteLeft className="text-red-500 text-lg" />
-            <p className="italic text-gray-700">
+            <p className="italic text-white">
               Your life really depends on bystanders because the most they can do is get you in a car
             </p>
           </div>
         </div>
 
         {/* Article */}
-        <p data-aos="fade-up" className="text-gray-600 leading-relaxed">
+        <p data-aos="fade-up" className="text-gray-800 leading-relaxed">
           People die in Ghana because the people around them don't knowledge
           basic first aid. It's crazy when you hear about someone dying and
           it was something simple that could have ben prevented.
@@ -44,7 +44,7 @@ function ProfileSection() {
           />
           <div className="flex-col">
               <p className="font-semibold text-gray-800 text-xl">Dr. Lt. Selina Okyere</p>
-              <p className=" text-gray-500 text-m">United States Air Force</p>
+              <p className=" text-gray-800 text-m">United States Air Force</p>
           </div>
         </div>
 

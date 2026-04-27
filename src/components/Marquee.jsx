@@ -56,7 +56,7 @@ const MarqueeRow = ({ images, reverse = false }) => {
 
 export default function MarqueeSection() {
   return (
-    <section className="w-full py-14 bg-white">
+    <section className="w-full py-14 bg-gray-300">
       {/* Header */}
       <div data-aos="zoom-in" className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">

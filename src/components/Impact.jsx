@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 function Impact() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-6 md:p-12 items-center">
+    <div className="bg-gray-300 grid grid-cols-1 md:grid-cols-2 gap-10 p-6 md:p-12 items-center">
       
       {/* Left Column */}
       <div>
@@ -14,7 +14,7 @@ function Impact() {
         </h1>
 
 
-        <p data-aos="fade-up" className="text-gray-500 leading-relaxed">
+        <p data-aos="fade-up" className="text-gray-800 leading-relaxed">
           Global Life Savers Inc equips communiteis with essential emergency response skills 
           through hands-on training, outreach programs, and youth-focused initiatives.
           Our efforts strengthen local preparedness and empower people to act confidently when emergencies arise.
@@ -22,7 +22,7 @@ function Impact() {
       </div>
 
       {/* Right Column (Stats Card) */}
-      <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+      <div className="bg-gray-100 rounded-2xl shadow-2xl p-8 border border-white">
         
         <h3 data-aos="fade-up" className="text-xl font-semibold mb-6">
           Our Impact

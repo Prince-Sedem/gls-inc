@@ -36,11 +36,11 @@ export default function GallerySection() {
 
   return (
     <section id="gallery">
-        <div  className="bg-gray-600 p-6 md:p-12 space-y-16">
+        <div  className="bg-gray-700 p-6 md:p-12 space-y-16">
           {/* ================= KUMASI SECTION ================= */}
-          <h1 className="bg-gray-500 w-50 text-xl md:xl font-bold justify-center" >TRAINING EVENTS</h1>
+          <h1 className="bg-blue-800 text-white w-50 text-xl md:xl font-bold justify-center" >TRAINING EVENTS</h1>
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            <h2 className="text-white text-2xl md:text-3xl font-bold mb-6">
               Health Screening In Kumasi, Asaman
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -61,7 +61,7 @@ export default function GallerySection() {
           </div>
           {/* ================= POLICE SECTION ================= */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            <h2 className="text-white text-2xl md:text-3xl font-bold mb-6">
               Police Emergency Response Training
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

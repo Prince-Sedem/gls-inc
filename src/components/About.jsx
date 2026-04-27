@@ -17,7 +17,7 @@ function About() {
     
 
     <section id="about">
-      <div className="py-16 px-6 bg-white">
+      <div className="py-16 px-6 bg-gray-300">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       
           {/* Left: Text */}
@@ -27,10 +27,10 @@ function About() {
             transition={{ duration: 0.8 }}
           >
             <div data-aos="fade-up" className="mb-30">
-                <h4 className="bg-blue-300 w-40 px-5 font-bold text-white text-xl ">ABOUT US</h4>
+                <h4 className="bg-blue-700 w-40 px-5 font-bold text-white text-xl ">ABOUT US</h4>
                 <h2 className="text-5xl font-bold text-gray-800 mb-4">Turning Bystanders Into First Responders Across West Africa</h2>
-                <p className="text-gray-600 text-lg leading-relaxed">
-                  <span className="font-semibold text-blue-600 text-2xl">Global Life Savers Inc</span> is a non-governmental organization (NGO) dedicated to reducing preventable
+                <p className="text-gray-800 text-lg leading-relaxed">
+                  <span className="font-semibold text-blue-700 text-2xl">Global Life Savers Inc</span> is a non-governmental organization (NGO) dedicated to reducing preventable
                    deaths through emergency health training education, and capacity-building in underserved communities.</p>
             </div>
           </motion.div>

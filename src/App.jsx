@@ -11,6 +11,7 @@ import ProgramsSection from './components/ProgramSection'
 import ProfileSection from './components/ProfileSection'
 import GallerySection from './components/GallerySection'
 import SupportCard from './components/SupportCard'
+import ScrollToTop from './components/ScrollToTop'
 import './App.css'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
     <Marquee />
     <SupportCard />
     <Footer />
+    <ScrollToTop />
     </>
   )
 }

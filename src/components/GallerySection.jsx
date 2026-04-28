@@ -1,33 +1,126 @@
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function GallerySection() {
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Sample images (replace with yours)
-    const policeImages = [
-    "/images/health-screening1.png",
+    {/* ================= Police Emergency Response Training, Accra SECTION ================= */}
+
+    const policetesanoImages = [
+    "/images/police-emergency-res1.jpg",
+    "/images/police-emergency-res2.jpg",
+    "/images/police-emergency-res3.jpg",
+    "/images/police-emergency-res4.jpg",
+
+
+  ];
+
+    {/* ================= EUROPEAN RESUSCITATION COUNCIL SYMPOSIUM, PARIS SECTION ================= */}
+
+    const eurosymposiumImages = [
+    "/images/euro-resus-sym1.jpg",
+    "/images/euro-resus-sym2.jpg",
+    "/images/euro-resus-sym3.jpg",
+    "/images/euro-resus-sym4.jpg",
+
+  
+  
+
+  ];
+    {/* ================= EUROPEAN RESUSCITATION COUNCIL CONGRESS, ROTTERDAM SECTION ================= */}
+
+    const eurocongressImages = [
+    "/images/euro-resus-congress1.jpg",
+    "/images/euro-resus-congress2.jpg",
+    "/images/euro-resus-congress3.jpg",
+    "/images/euro-resus-congress4.jpg",
+
+  
+  
+
+  ];
+    {/* ================= FINANCING FOR DEVELOPMENT, SEVILLA SECTION ================= */}
+
+    const financingdevImages = [
+    "/images/financing-dev1.jpg",
+    "/images/financing-dev2.jpg",
+    "/images/financing-dev3.jpg",
+    "/images/financing-dev4.jpg",
+  
+  
+
+  ];
+    {/* ================= 67th  SESSION OF THE COMMISSION ON STATUS OF WOMEN, NEW YORK SECTION================= */}
+
+    const unwomencommImages = [
+    "/images/UN-67th-women-comm1.jpg",
+    "/images/UN-67th-women-comm2.jpg",
+    "/images/UN-67th-women-comm3.jpg",
+    "/images/UN-67th-women-comm4.jpg",
+  
+  
+
+  ];
+    {/* ================= 61st  SESSION OF THE COMMISSION FOR SOCIAL DEVELOPMENT, NEW YORK SECTION================= */}
+
+    const unsocialdevImages = [
+    "/images/UN-61st-comm1.jpg",
+    "/images/UN-61st-comm2.jpg",
+    "/images/UN-61st-comm3.jpg",
+    "/images/UN-61st-comm4.jpg",
+  
+
+  ];
+    {/* ================= DONATION AT THE SCHOOL FOR SPECIAL NEEDS AND DISABILITY SECTION================= */}
+
+    const donationdisabilityImages = [
+    "/images/donation-disability1.jpg",
+    "/images/donation-disability2.jpg",
+    "/images/donation-disability3.jpg",
+    "/images/donation-disability4.jpg",
+
+
+  ];
+    {/* ================= DONATION, ADENTA ORPHANAGE SECTION================= */}
+
+    const donationadentaImages = [
+    "/images/donation-adenta1.jpg",
+    "/images/donation-adenta2.jpg",
+    "/images/donation-adenta3.jpg",
+    "/images/donation-adenta4.jpg",
+
+  ];
+    {/* ================= HEALTH SCREENING KUMASI SECTION================= */}
+
+    const healthImages = [
     "/images/health-screening2.png",
-    "/images/health-screening3.png",
     "/images/health-screening4.png",
-    "/images/health-screening5.png",
     "/images/health-screening6.png",
-    "/images/health-screening7.png",
     "/images/health-screening8.png",
 
   ];
 
+    {/* ================= POLICE TRAINING KUMASI SECTION================= */}
 
   const kumasiImages = [
-    "/images/police1.png",
     "/images/police2.png",
-    "/images/police3.png",
     "/images/police4.png",
-    "/images/police5.png",
     "/images/police6.png",
-    "/images/police7.png",
     "/images/police8.png",
+  
+];
+
+
+{/* =================  Emergency Response At A Sporting Event KUMASI SECTION================= */}
+
+  const sportingImages = [
+    "/images/sporting-emergency-res1.jpg",
+    "/images/sporting-emergency-res2.jpg",
+    "/images/sporting-emergency-res3.jpg",
+    "/images/sporting-emergency-res4.jpg",
 
 
   ];
@@ -37,15 +130,16 @@ export default function GallerySection() {
   return (
     <section id="gallery">
         <div  className="bg-gray-700 p-6 md:p-12 space-y-16">
-          {/* ================= KUMASI SECTION ================= */}
-          <h1 className="bg-blue-800 text-white w-50 text-xl md:xl font-bold justify-center" >TRAINING EVENTS</h1>
+          <h1 data-aos="fade-up" className="bg-blue-800 text-white w-23 text-xl md:xl font-bold justify-center" >EVENTS</h1>
+          {/* ================= Police Emergency Response Training Accra SECTION ================= */}
           <div>
-            <h2 className="text-white text-2xl md:text-3xl font-bold mb-6">
-              Health Screening In Kumasi, Asaman
+            <h2 data-aos="fade-up" className="text-white text-2xl md:text-3xl font-bold mb-6">
+              Police Emergency Response Training, Accra (April, 2026)
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {policeImages.map((img, index) => (
+              {policetesanoImages.map((img, index) => (
                 <div
+                  data-aos="fade-up"
                   key={index}
                   className="overflow-hidden rounded-xl cursor-pointer group"
                   onClick={() => setSelectedImage(img)}
@@ -59,14 +153,15 @@ export default function GallerySection() {
               ))}
             </div>
           </div>
-          {/* ================= POLICE SECTION ================= */}
+    {/* ================= EUROPEAN RESUSCITATION COUNCIL SYMPOSIUM, PARIS SECTION ================= */}
           <div>
-            <h2 className="text-white text-2xl md:text-3xl font-bold mb-6">
-              Police Emergency Response Training
+            <h2 data-aos="fade-up" className="text-white text-2xl md:text-3xl font-bold mb-6">
+                European Resuscitation Council Symposium, Paris (March, 2026)
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {kumasiImages.map((img, index) => (
+              {eurosymposiumImages.map((img, index) => (
                 <div
+                  data-aos="fade-up"
                   key={index}
                   className="overflow-hidden rounded-xl cursor-pointer group"
                   onClick={() => setSelectedImage(img)}
@@ -80,6 +175,207 @@ export default function GallerySection() {
               ))}
             </div>
           </div>
+    {/* ================= EUROPEAN RESUSCITATION COUNCIL CONGRESS, ROTTERDAM SECTION ================= */}
+          <div>
+            <h2 data-aos="fade-up" className="text-white text-2xl md:text-3xl font-bold mb-6">
+                European Resuscitation Council Congress, Rotterdam (October, 2025)
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {eurocongressImages.map((img, index) => (
+                <div
+                  data-aos="fade-up"
+                  key={index}
+                  className="overflow-hidden rounded-xl cursor-pointer group"
+                  onClick={() => setSelectedImage(img)}
+                >
+                  <img
+                    src={img}
+                    alt=""
+                    className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+    {/* ================= FINANCING FOR DEVELOPMENT, SEVILLA SECTION ================= */}
+          <div>
+            <h2 data-aos="fade-up" className="text-white text-2xl md:text-3xl font-bold mb-6">
+                Financing For Development, Sevilla (July, 2025)
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {financingdevImages.map((img, index) => (
+                <div
+                  data-aos="fade-up"
+                  key={index}
+                  className="overflow-hidden rounded-xl cursor-pointer group"
+                  onClick={() => setSelectedImage(img)}
+                >
+                  <img
+                    src={img}
+                    alt=""
+                    className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+    {/* ================= 67th  SESSION OF THE COMMISSION ON THE STATUS OF WOMEN, NEW YORK SECTION ================= */}
+          <div>
+            <h2 data-aos="fade-up" className="text-white text-2xl md:text-3xl font-bold mb-6">
+                The 67th Session Of The Commission On The Status Of Women, New York (March, 2023)
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {unwomencommImages.map((img, index) => (
+                <div
+                  data-aos="fade-up"
+                  key={index}
+                  className="overflow-hidden rounded-xl cursor-pointer group"
+                  onClick={() => setSelectedImage(img)}
+                >
+                  <img
+                    src={img}
+                    alt=""
+                    className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+    {/* ================= 61st  SESSION OF THE COMMISSION FOR SOCIAL DEVELOPMENT, NEW YORK SECTION ================= */}
+          <div>
+            <h2 data-aos="fade-up" className="text-white text-2xl md:text-3xl font-bold mb-6">
+                The 61st Session Of The Commission For Social Development, New York (February, 2023)
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {unsocialdevImages.map((img, index) => (
+                <div
+                  data-aos="fade-up"
+                  key={index}
+                  className="overflow-hidden rounded-xl cursor-pointer group"
+                  onClick={() => setSelectedImage(img)}
+                >
+                  <img
+                    src={img}
+                    alt=""
+                    className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+    {/* ================= DONATION AT THE SCHOOL FOR SPECIAL NEEDS AND DISABILITY, ACCRA SECTION================= */}
+          <div>
+            <h2 data-aos="fade-up" className="text-white text-2xl md:text-3xl font-bold mb-6">
+              Donation At The School For Special Needs And Disabilty, Accra (September, 2022)
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {donationdisabilityImages.map((img, index) => (
+                <div
+                  data-aos="fade-up"
+                  key={index}
+                  className="overflow-hidden rounded-xl cursor-pointer group"
+                  onClick={() => setSelectedImage(img)}
+                >
+                  <img
+                    src={img}
+                    alt=""
+                    className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+          {/* ================= DONATION, ADENTA ORPHANAGE SECTION ================= */}
+          <div>
+            <h2 data-aos="fade-up" className="text-white text-2xl md:text-3xl font-bold mb-6">
+              Donation At An Orphanage And A Foster Home, Adenta (December, 2021)
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {donationadentaImages.map((img, index) => (
+                <div
+                  data-aos="fade-up"
+                  key={index}
+                  className="overflow-hidden rounded-xl cursor-pointer group"
+                  onClick={() => setSelectedImage(img)}
+                >
+                  <img
+                    src={img}
+                    alt=""
+                    className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+            {/* =================  Emergency Response At A Sporting Event KUMASI SECTION================= */}
+
+          <div>
+            <h2 data-aos="fade-up" className="text-white text-2xl md:text-3xl font-bold mb-6">
+              Emergency Response At A Sporting Event, Kumasi (September, 2017)
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {sportingImages.map((img, index) => (
+                <div
+                data-aos="fade-up"
+                key={index}
+                className="overflow-hidden rounded-xl cursor-pointer group"
+                onClick={() => setSelectedImage(img)}
+                >
+                  <img
+                    src={img}
+                    alt=""
+                    className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+                {/* ================= HEALTH SCREENING KUMASI SECTION================= */}
+                <div>
+                  <h2 data-aos="fade-up" className="text-white text-2xl md:text-3xl font-bold mb-6">
+                    Health Screening In Kumasi, Asaman (June, 2017)
+                  </h2>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {healthImages.map((img, index) => (
+                      <div
+                        data-aos="fade-up"
+                        key={index}
+                        className="overflow-hidden rounded-xl cursor-pointer group"
+                        onClick={() => setSelectedImage(img)}
+                      >
+                        <img
+                          src={img}
+                          alt=""
+                          className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                {/* ================= POLICE TRAINING KUMASI SECTION================= */}
+    
+              <div>
+                <h2 data-aos="fade-up" className="text-white text-2xl md:text-3xl font-bold mb-6">
+                  Police Emergency Response Training, Kumasi (March, 2017)
+                </h2>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {kumasiImages.map((img, index) => (
+                    <div
+                      data-aos="fade-up"
+                      key={index}
+                      className="overflow-hidden rounded-xl cursor-pointer group"
+                      onClick={() => setSelectedImage(img)}
+                    >
+                      <img
+                        src={img}
+                        alt=""
+                        className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
           {/* ================= MODAL ================= */}
           {selectedImage && (
             <div

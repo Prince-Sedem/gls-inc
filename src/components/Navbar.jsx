@@ -105,12 +105,13 @@ function Navbar() {
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 h-15">
         
         {/* Logo */}
-        <a href="#home">
+        <a href="#home" className="flex flex-cols">
           <img
             src="/images/gls-inc.png"
             alt="gls Logo"
             className="w-20 object-contain"
           />
+          <h1 className="mt-6 font-semibold text-blue-800 text-2xl">Global Life Savers Inc</h1>
         </a>
 
         {/* Desktop Menu */}

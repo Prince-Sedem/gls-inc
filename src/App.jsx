@@ -12,6 +12,7 @@ import ProfileSection from './components/ProfileSection'
 import GallerySection from './components/GallerySection'
 import SupportCard from './components/SupportCard'
 import ScrollToTop from './components/ScrollToTop'
+import Partners from './components/Partners'
 import './App.css'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <ProfileSection />
     <Sdgs />
     <GallerySection />
+    <Partners />
     <Contact />
     <Marquee />
     <SupportCard />

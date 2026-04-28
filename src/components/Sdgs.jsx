@@ -1,24 +1,26 @@
 import React from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Sdgs() {
   return (
     <div className=" bg-gray-300 grid grid-cols-1 md:grid-cols-3 gap-8 p-6">
-      
       {/* First Column (Text) */}
       <div className="flex flex-col justify-center">
         <h1 data-aos="fade-up" className="text-xl font-bold mb-4">
-            Global Strategies for Life Preservation and Well-being
+          Global Strategies for Life Preservation and Well-being
         </h1>
 
         <h2 data-aos="fade-up" className="text-l text-gray-800 mb-4">
-          A Multidimensional Approach to Eliminating Health Risks, Violence, and Resource Scarcity by 2030
+          A Multidimensional Approach to Eliminating Health Risks, Violence, and
+          Resource Scarcity by 2030
         </h2>
 
         {/* Paired Paragraphs */}
-        <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          
+        <div
+          data-aos="fade-up"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+        >
           {/* Item 1 */}
           <div className="flex items-start gap-3">
             <div className="w-6 h-3 bg-green-500 mt-1.5"></div>
@@ -42,7 +44,6 @@ function Sdgs() {
             <div className="w-9 h-3 bg-blue-900 mt-1.5"></div>
             <p className="text-m">Peace, Justice, and Strong Institutions</p>
           </div>
-
         </div>
       </div>
 
@@ -63,7 +64,6 @@ function Sdgs() {
           className="w-60 h-60 object-cover "
         />
       </div>
-
     </div>
   );
 }

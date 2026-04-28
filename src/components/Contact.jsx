@@ -1,13 +1,16 @@
 function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-b from-blue-50 to-white"
+    >
       <div className="max-w-4xl mx-auto px-6">
-
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900">Get In Touch</h2>
           <p className="text-gray-500 mt-3">
-            We’d love to hear from you. Send us a message and we’ll respond shortly.
+            We’d love to hear from you. Send us a message and we’ll respond
+            shortly.
           </p>
         </div>
 
@@ -50,7 +53,7 @@ function Contact() {
           {/* Button */}
           <button
             type="submit"
-            className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
+            className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-900 to-blue-900 text-white font-semibold shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300"
           >
             Send Message
           </button>

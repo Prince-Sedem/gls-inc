@@ -1,17 +1,17 @@
 function Hero() {
-
-const createMailTo = (subject, message) => {
-  return `mailto:info@glsinc.org?subject=${encodeURIComponent(
-    subject
-  )}&body=${encodeURIComponent(message)}`;
-};
+  const createMailTo = (subject, message) => {
+    return `mailto:info@glsinc.org?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(message)}`;
+  };
 
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center text-white"
       style={{
-        backgroundImage: "url('/images/pexels-safari-consoler-3290243-11580455.jpg')",
+        backgroundImage:
+          "url('/images/pexels-safari-consoler-3290243-11580455.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -21,21 +21,17 @@ const createMailTo = (subject, message) => {
 
       {/* Content */}
       <div className="relative z-10 w-full px-6 md:px-16">
-        
         {/* GRID START */}
         <div className="grid md:grid-cols-2 gap-10 items-center">
-
           {/* LEFT SIDE (TEXT) */}
           <div>
             <h1 className="text-4xl md:text-6xl lg:text-5xl font-extrabold leading-tight">
-              
               {/* Lines */}
               <div className="flex gap-2 mt-28 md:mt-20">
                 <div className="h-1 w-20 bg-red-500 rounded-full"></div>
                 <div className="h-1 w-6 bg-yellow-400 rounded-full"></div>
                 <div className="h-1 w-6 bg-green-500 rounded-full"></div>
               </div>
-
               Reducing <br />
               Preventable Deaths <br />
               Through Education & Action
@@ -51,7 +47,7 @@ const createMailTo = (subject, message) => {
               <a
                 href={createMailTo(
                   "Join The Mission",
-                  "Hello GLS Team,\n\nI am interested in joining your mission.\nPlease let me know how I can get involved.\n\nThank you."
+                  "Hello GLS Team,\n\nI am interested in joining your mission.\nPlease let me know how I can get involved.\n\nThank you.",
                 )}
                 className="px-4 py-2 bg-red-500 text-xs font-medium hover:bg-red-600 transition"
               >
@@ -61,7 +57,7 @@ const createMailTo = (subject, message) => {
               <a
                 href={createMailTo(
                   "Volunteer Inquiry",
-                  "Hello,\n\nI would love to volunteer with your organization.\nKindly share available opportunities.\n\nRegards."
+                  "Hello,\n\nI would love to volunteer with your organization.\nKindly share available opportunities.\n\nRegards.",
                 )}
                 className="px-4 py-2 bg-yellow-400 text-xs font-medium hover:bg-yellow-500 transition"
               >
@@ -71,7 +67,7 @@ const createMailTo = (subject, message) => {
               <a
                 href={createMailTo(
                   "Donation",
-                  "Hello GLS Team,\n\nI am interested in donating.\nPlease share with me your account details.\n\nThank you."
+                  "Hello GLS Team,\n\nI am interested in donating.\nPlease share with me your account details.\n\nThank you.",
                 )}
                 className="px-4 py-2 bg-green-500 text-xs font-medium hover:bg-green-600 transition"
               >
@@ -88,10 +84,8 @@ const createMailTo = (subject, message) => {
               className="w-[90%] md:w-[80%] "
             />
           </div>
-
         </div>
         {/* GRID END */}
-
       </div>
     </section>
   );

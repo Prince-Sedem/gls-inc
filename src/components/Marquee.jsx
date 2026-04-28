@@ -1,33 +1,28 @@
-
-
 const rowOneImages = [
   { image: "/images/no-poverty.png" },
-  { image: "/images/zero-hunger.png"},
-  { image: "/images/good-health.png"},
-  { image: "/images/quality-edu.png"},
-  { image: "/images/gender-eq.png"},
-  { image: "/images/clean-water.png"},
-  { image: "/images/energy.png"},
-  { image: "/images/eco-growth.png"},
-  { image: "/images/industry-inno.png"},
+  { image: "/images/zero-hunger.png" },
+  { image: "/images/good-health.png" },
+  { image: "/images/quality-edu.png" },
+  { image: "/images/gender-eq.png" },
+  { image: "/images/clean-water.png" },
+  { image: "/images/energy.png" },
+  { image: "/images/eco-growth.png" },
+  { image: "/images/industry-inno.png" },
 ];
 
 const rowTwoImages = [
-  { image: "/images/reduce-ineq.png"},
-  { image: "/images/sus-cities.png"},
-  { image: "/images/responsible-cons.png"},
-  { image: "/images/climate-action.png"},
-  { image: "/images/below-water.png"},
-  { image: "/images/on-land.png"},
-  { image: "/images/peace-inst.png"},
-  { image: "/images/partnership-goals.png"},
-
+  { image: "/images/reduce-ineq.png" },
+  { image: "/images/sus-cities.png" },
+  { image: "/images/responsible-cons.png" },
+  { image: "/images/climate-action.png" },
+  { image: "/images/below-water.png" },
+  { image: "/images/on-land.png" },
+  { image: "/images/peace-inst.png" },
+  { image: "/images/partnership-goals.png" },
 ];
-
 
 const MarqueeRow = ({ images, reverse = false }) => {
   return (
-    
     <div className="overflow-hidden w-full">
       <div
         className={`flex w-max gap-10 ${
@@ -35,24 +30,16 @@ const MarqueeRow = ({ images, reverse = false }) => {
         }`}
       >
         {[...images, ...images].map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center flex-shrink-0"
-          >
-            <img
-              src={item.image}
-              className="w-20 h-20 object-contain"
-            />
+          <div key={index} className="flex flex-col items-center flex-shrink-0">
+            <img src={item.image} className="w-20 h-20 object-contain" />
 
-            <span className="mt-2 text-sm font-medium text-gray-700">
-            </span>
+            <span className="mt-2 text-sm font-medium text-gray-700"></span>
           </div>
         ))}
       </div>
     </div>
   );
 };
-
 
 export default function MarqueeSection() {
   return (

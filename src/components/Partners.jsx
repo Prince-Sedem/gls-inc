@@ -1,5 +1,5 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Partners() {
   const partners = [
@@ -16,9 +16,11 @@ function Partners() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6 md:px-12 text-center">
-        
         {/* Header */}
-        <h2 data-aos="fade-up" className="text-3xl md:text-4xl font-bold text-gray-800">
+        <h2
+          data-aos="fade-up"
+          className="text-3xl md:text-4xl font-bold text-gray-800"
+        >
           Our Partners
         </h2>
         <p data-aos="fade-up" className="mt-4 text-gray-600 max-w-2xl mx-auto">

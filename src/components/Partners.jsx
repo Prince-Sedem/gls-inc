@@ -39,7 +39,7 @@ function Partners() {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-20 object-contain
+                className="h-26 object-contain
                            transition duration-300 hover:scale-105"
               />
             </div>

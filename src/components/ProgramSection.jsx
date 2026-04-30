@@ -58,10 +58,10 @@ function ProgramsSection() {
       {/* IMAGE SIDE */}
       <div
         data-aos="zoom-in"
-        className="group w-full h-100 overflow-hidden rounded-2xl"
+        className="group w-full h-[450px] overflow-hidden rounded-2xl"
       >
         <img
-          src="/images/gls-cpr.png.jpeg"
+          src="/images/change-program.jpg"
           alt="Life saving training"
           className="w-full h-full object-cover rounded-2xl shadow-lg "
         />

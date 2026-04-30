@@ -11,9 +11,9 @@ function Hero() {
       className="relative min-h-screen flex items-center text-white"
       style={{
         backgroundImage:
-          "url('/images/pexels-safari-consoler-3290243-11580455.jpg')",
+          "url('/images/change-hero.jpg')",
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "70% center ",
       }}
     >
       {/* Overlay */}

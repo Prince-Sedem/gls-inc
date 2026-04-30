@@ -48,14 +48,14 @@ function About() {
             {/* Main image */}
             <img
               data-aos="zoom-in"
-              src="/images/pexels-bobbydimas-33001996.jpg"
+              src="/images/change-about.jpg"
               alt="About Us"
               className="absolute bottom-0 left-0 w-[60%] h-[80%] object-cover rounded-2xl shadow-xl"
             />
             {/* Overlapping image */}
             <img
               data-aos="zoom-out"
-              src="/images/pexels-lagosfoodbank-11298935.jpg"
+              src="/images/change-about2.jpg"
               alt="Team"
               className="absolute top-0 right-0 w-[60%] h-[80%] object-cover rounded-2xl shadow-2xl border-4 border-white"
             />

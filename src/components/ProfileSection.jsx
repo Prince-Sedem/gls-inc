@@ -11,7 +11,7 @@ function ProfileSection() {
         <div>
           <h4
             data-aos="fade-up"
-            className="bg-blue-900 w-[410px] px-5 font-bold text-white text-l uppercase tracking-wider"
+            className="bg-blue-900 w-70 md:w-[410px] px-5 font-bold text-white text-l uppercase tracking-wider"
           >
             LET'S BUILD A GENERATION OF LIFE SAVERS
           </h4>

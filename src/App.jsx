@@ -13,6 +13,7 @@ import GallerySection from './components/GallerySection'
 import SupportCard from './components/SupportCard'
 import ScrollToTop from './components/ScrollToTop'
 import Partners from './components/Partners'
+import Values from './components/Values'
 import './App.css'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <Navbar />
     <Hero />
     <About />
+    <Values />
     <Impact />
     <ProgramsSection />
     <ProfileSection />

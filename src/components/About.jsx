@@ -32,9 +32,13 @@ function About() {
                 <span className="font-semibold text-blue-900 text-2xl">
                   Global Life Savers Inc
                 </span>{" "}
-                is a non-governmental organization (NGO) dedicated to reducing
-                preventable deaths through emergency health training education,
-                and capacity-building in underserved communities.
+                is a non-governmental organization (NGO) committed to combating
+                preventable mortality through community-centered health
+                education and strategic action. We address a broad spectrum of
+                preventable threats — including mental health crises, infectious
+                disease, and life-threatening emergencies — by partnering with
+                local leaders, health professionals , and advocates to deliver
+                life-saving knowledge where it is needed most.
               </p>
             </div>
           </motion.div>
@@ -48,14 +52,14 @@ function About() {
             {/* Main image */}
             <img
               data-aos="zoom-in"
-              src="/images/change-about.jpg"
+              src="/images/police-emergency-res4.jpg"
               alt="About Us"
               className="absolute bottom-0 left-0 w-[60%] h-[80%] object-cover rounded-2xl shadow-xl"
             />
             {/* Overlapping image */}
             <img
               data-aos="zoom-out"
-              src="/images/change-about2.jpg"
+              src="/images/change-about4.jpg"
               alt="Team"
               className="absolute top-0 right-0 w-[60%] h-[80%] object-cover rounded-2xl shadow-2xl border-4 border-white"
             />

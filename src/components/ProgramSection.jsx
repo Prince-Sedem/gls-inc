@@ -6,7 +6,7 @@ function ProgramsSection() {
   const items = [
     "First Aid and CPR",
     "Basic Life Support (BLS)",
-    "Mental Health Education",
+    "Community Health Education",
     "Emergency Response",
     "Youth Responder Programs",
     "Public Health / Infectious Diseases Prevention And Awareness",

@@ -55,7 +55,7 @@ function Impact() {
           <div data-aos="fade-up" className="flex items-center justify-between">
             <p className="text-gray-600">BLS & First Aid Sessions</p>
             <span className="text-2xl font-bold text-green-500">
-              {inView && <CountUp end={50000} duration={2.5} separator="," />}+
+              {inView && <CountUp end={100} duration={2.5} separator="," />}+
             </span>
           </div>
         </div>

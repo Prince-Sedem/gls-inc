@@ -41,8 +41,8 @@ export default function GallerySection() {
 
   const policetesanoImages = [
     "/images/police-emergency-res1.jpg",
-    "/images/police-emergency-res2.jpg",
-    "/images/police-emergency-res3.jpg",
+    "/images/change-police1.jpg",
+    "/images/change-police2.jpg",
     "/images/police-emergency-res4.jpg",
   ];
 
@@ -94,7 +94,7 @@ export default function GallerySection() {
     "/images/UN-61st-comm1.jpg",
     "/images/UN-61st-comm2.jpg",
     "/images/UN-61st-comm3.jpg",
-    "/images/UN-61st-comm4.jpg",
+    "/images/change-un1.jpg",
   ];
   {
     /* ================= DONATION AT THE SCHOOL FOR SPECIAL NEEDS AND DISABILITY SECTION================= */

@@ -7,7 +7,7 @@ function Partners() {
     { name: "National Ambulance Service", logo: "/images/nas-logo (1).png" },
     { name: "European Resuscitation Council", logo: "/images/ERC_Logo.png" },
     { name: "Stop The Bleed", logo: "/images/stop-the-bleed-logo.png" },
-    { name: "ACCP", logo: "/images/ACCP.png" },
+    { name: "Alliance Creative Community Project", logo: "/images/accp-new.png" },
     { name: "International Diaspora Union", logo: "/images/IDU-logo.png" },
     { name: "UN ECOSOC", logo: "/images/ecosoc2.png" },
     { name: "Financing For Development", logo: "/images/finan-dev2 (1).png" },
@@ -34,7 +34,7 @@ function Partners() {
             <div
               data-aos="fade-up"
               key={index}
-              className="flex justify-center items-center group"
+              className="flex flex-col items-center text-center group"
             >
               <img
                 src={partner.logo}
@@ -42,6 +42,11 @@ function Partners() {
                 className="h-26 object-contain
                            transition duration-300 hover:scale-105"
               />
+
+              {/* Partner Name */}
+              <p className="mt-3 text-sm text-gray-700 font-medium">
+                {partner.name}
+              </p>
             </div>
           ))}
         </div>

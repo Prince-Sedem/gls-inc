@@ -11,9 +11,9 @@ function ProfileSection() {
         <div>
           <h4
             data-aos="fade-up"
-            className="bg-blue-900 w-87 px-5 font-bold text-white text-l uppercase tracking-wider"
+            className="bg-blue-900 w-[410px] px-5 font-bold text-white text-l uppercase tracking-wider"
           >
-            LET'S BUILD TOMORROW TOGETHER
+            LET'S BUILD A GENERATION OF LIFE SAVERS
           </h4>
           <h1
             data-aos="fade-up"
@@ -79,11 +79,12 @@ function ProfileSection() {
 
           {/* Text stays on top */}
           <div className="absolute bottom-4 right-4 text-right">
-            <h2 className="text-white text-5xl font-bold drop-shadow-lg px-8">
-              911
-            </h2>
-            <p className="text-white text-sm drop-shadow-md">
-              Is minutes away — You <br /> Are seconds away
+            <p className="text-white text-sm drop-shadow-md leading-snug">
+              An Ambulance is minutes away — <br /> You Are seconds away
+            </p>
+
+            <p className="text-white text-xs opacity-70 mt-2">
+              Photo credit: Mike Olsen
             </p>
           </div>
         </a>

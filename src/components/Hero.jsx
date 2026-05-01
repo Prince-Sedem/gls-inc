@@ -38,7 +38,7 @@ function Hero() {
             </h1>
 
             <p className="mt-6 text-lg md:text-xl text-gray-200">
-              Combatting preventable mortality by arming communities with <br />
+              Combatting preventable mortality by arming communities  <br /> with
               essential health knowledge
             </p>
 

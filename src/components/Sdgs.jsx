@@ -41,8 +41,18 @@ function Sdgs() {
 
           {/* Item 4 */}
           <div className="flex items-start gap-3">
+            <div className="w-9 h-3 bg-red-900 mt-1.5"></div>
+            <p className="text-m">Education</p>
+          </div>
+          {/* Item 5 */}
+          <div className="flex items-start gap-3">
+            <div className="w-9 h-3 bg-red-500 mt-1.5"></div>
+            <p className="text-m">Gender Equality</p>
+          </div>
+          {/* Item 6 */}
+          <div className="flex items-start gap-3">
             <div className="w-9 h-3 bg-blue-900 mt-1.5"></div>
-            <p className="text-m">Peace, Justice, and Strong Institutions</p>
+            <p className="text-m">Partnerships and goals</p>
           </div>
         </div>
       </div>
@@ -61,7 +71,7 @@ function Sdgs() {
         <img
           src="/images/sdg-logo (1).png"
           alt="Sample 2"
-          className="w-60 h-60 object-cover "
+          className="w-70 h-70 object-cover "
         />
       </div>
     </div>

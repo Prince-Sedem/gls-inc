@@ -80,7 +80,7 @@ function ProfileSection() {
           {/* Text stays on top */}
           <div className="absolute bottom-4 right-4 text-right">
             <p className="text-white text-sm drop-shadow-md leading-snug">
-              An Ambulance is minutes away — <br /> You Are seconds away
+              An Ambulance is minutes away — <br /> You are seconds away.
             </p>
 
             <p className="text-white text-xs opacity-70 mt-2">

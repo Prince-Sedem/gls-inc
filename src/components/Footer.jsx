@@ -1,4 +1,4 @@
-import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaFacebook } from "react-icons/fa";
 import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
@@ -51,7 +51,7 @@ function Footer() {
           <ul className="space-y-3">
             <li>
               <a
-                href="https://www.instagram.com/globallifesavers.inc/"
+                href="https://www.instagram.com/globallifesavers.inc?igsh=b2pwMWxoYWc0dHh2&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-pink-500 transition"
@@ -63,19 +63,19 @@ function Footer() {
 
             <li>
               <a
-                href="https://www.linkedin.com/company/global-life-savers-inc"
+                href="https://www.facebook.com/share/1M69imack4/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-blue-500 transition"
               >
-                <FaLinkedin className="text-lg" />
-                <span>LinkedIn</span>
+                <FaFacebook className="text-lg" />
+                <span>Facebook</span>
               </a>
             </li>
 
             <li>
               <a
-                href="#"
+                href="https://x.com/globalsaversorg?s=11"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-white transition"

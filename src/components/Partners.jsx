@@ -14,7 +14,7 @@ function Partners() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-300">
       <div className="max-w-6xl mx-auto px-6 md:px-12 text-center">
         {/* Header */}
         <h2

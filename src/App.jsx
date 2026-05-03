@@ -15,6 +15,7 @@ import ScrollToTop from './components/ScrollToTop'
 import Partners from './components/Partners'
 import Values from './components/Values'
 import './App.css'
+import NewsLetter from './components/NewsLetter'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,6 +32,7 @@ function App() {
     <Sdgs />
     <GallerySection />
     <Partners />
+    <NewsLetter />
     <Contact />
     <Marquee />
     <SupportCard />

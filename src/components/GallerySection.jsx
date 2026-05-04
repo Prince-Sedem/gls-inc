@@ -77,9 +77,9 @@ export default function GallerySection() {
     "/images/financing-dev4.jpg",
   ];
   {
-    /* ================= 67th  SESSION OF THE COMMISSION ON STATUS OF WOMEN, NEW YORK SECTION================= */
+    /* ================= 61st  SESSION OF THE COMMISSION FOR SOCIAL DEVELOPMENT, NEW YORK SECTION================= */
   }
-
+  
   const unwomencommImages = [
     "/images/UN-67th-women-comm1.jpg",
     "/images/UN-67th-women-comm2.jpg",
@@ -87,7 +87,7 @@ export default function GallerySection() {
     "/images/UN-67th-women-comm4.jpg",
   ];
   {
-    /* ================= 61st  SESSION OF THE COMMISSION FOR SOCIAL DEVELOPMENT, NEW YORK SECTION================= */
+    /* ================= 67th  SESSION OF THE COMMISSION ON STATUS OF WOMEN, NEW YORK SECTION================= */
   }
 
   const unsocialdevImages = [
@@ -274,44 +274,14 @@ export default function GallerySection() {
             ))}
           </div>
         </div>
-        {/* ================= 67th  SESSION OF THE COMMISSION ON THE STATUS OF WOMEN, NEW YORK SECTION ================= */}
+          {/* ================= 67th  SESSION OF THE COMMISSION ON THE STATUS OF WOMEN, NEW YORK SECTION ================= */}
         <div>
           <h2
             data-aos="fade-up"
             className="text-white text-2xl md:text-3xl font-bold mb-6"
           >
-            The 67th Session Of The Commission On The Status Of Women, New York
+           The 67th Session Of The Commission On The Status Of Women, New York
             (March, 2023)
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {unwomencommImages.map((img, index) => (
-              <div
-                data-aos="fade-up"
-                key={index}
-                className="overflow-hidden rounded-xl cursor-pointer group"
-                onClick={() => {
-                  setSelectedImage(img);
-                  setCurrentIndex(index);
-                  setCurrentImages(unwomencommImages);
-                }}
-              >
-                <img
-                  src={img}
-                  alt=""
-                  className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-        {/* ================= 61st  SESSION OF THE COMMISSION FOR SOCIAL DEVELOPMENT, NEW YORK SECTION ================= */}
-        <div>
-          <h2
-            data-aos="fade-up"
-            className="text-white text-2xl md:text-3xl font-bold mb-6"
-          >
-            The 61st Session Of The Commission For Social Development, New York
-            (February, 2023)
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {unsocialdevImages.map((img, index) => (
@@ -330,6 +300,36 @@ export default function GallerySection() {
                   alt=""
                   className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
                 />
+              </div>
+            ))}
+          </div>
+        </div>
+ {/* ================= 61st  SESSION OF THE COMMISSION FOR SOCIAL DEVELOPMENT, NEW YORK SECTION ================= */}
+        <div>
+          <h2
+            data-aos="fade-up"
+            className="text-white text-2xl md:text-3xl font-bold mb-6"
+            >
+            The 61st Session Of The Commission For Social Development, New York
+            (February, 2023)
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {unwomencommImages.map((img, index) => (
+              <div
+              data-aos="fade-up"
+              key={index}
+              className="overflow-hidden rounded-xl cursor-pointer group"
+              onClick={() => {
+                setSelectedImage(img);
+                setCurrentIndex(index);
+                setCurrentImages(unwomencommImages);
+                }}
+                >
+                <img
+                  src={img}
+                  alt=""
+                  className="w-full h-40 object-cover group-hover:scale-110 transition duration-300"
+                  />
               </div>
             ))}
           </div>
